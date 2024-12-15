@@ -7,7 +7,7 @@ using UnityEngine;
 using System.Reflection;
 
 
-namespace ExampleMod
+namespace DevUtils
 {
 
     public class CrystalMarble
@@ -22,7 +22,7 @@ namespace ExampleMod
         {
             if (!CrystalMarble.Patched)
             {
-                new Harmony("com.example.examplemod").PatchAll();
+                new Harmony("com.crystalmarble.DevUtils").PatchAll();
                 CrystalMarble.Patched = false;
                 SceneManager.sceneLoaded -= new UnityAction<Scene, LoadSceneMode>(CrystalMarble.Patch);
             }

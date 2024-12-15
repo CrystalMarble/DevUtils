@@ -15,7 +15,7 @@ class Config
 
 internal class Builder
 {
-    static string MOD_NAME = "ExampleMod"; // Change this to the name of your mod
+    static string MOD_NAME = "DevUtils"; // Change this to the name of your mod
     public static string GetHarmonyPath()
     {
         var ShouldDownloadHarmony = Prompt.Confirm("Should the program automatically download 0Harmony for you?", defaultValue: true);
